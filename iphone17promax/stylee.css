@@ -1,0 +1,244 @@
+@font-face {
+    font-family: seb2;
+    src: url(./sf-pro-text_regular.woff2);
+}
+@font-face {
+    font-family: seb1;
+    src: url(./sf-pro-text_bold.woff2);
+}
+@font-face {
+    font-family: seb;
+    src: url(./sf-pro-text_medium.woff2);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: seb2;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+}
+#main{
+    height: 100%;
+    width: 100%;
+   background-color: black;
+
+}
+ #nav {
+    position: fixed;      /* navbar ko screen ke top pe fix kare */
+    top: 0;               /* top se 0 distance */
+    left: 0;              /* left edge se start */
+    height: 60px;
+    width: 100%;
+    background-color: #F5F5F7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    z-index: 1000;        /* content ke upar rahe */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* optional shadow */
+}
+
+/* scroll ke baad content navbar ke neeche rahe, overlap na ho */
+body {
+    margin: 0;
+    padding-top: 60px;    /* navbar height ke barabar padding-top */
+}
+
+
+h4{
+    color: black;
+    font-weight: 300;
+}
+
+
+#center{
+    height: 70%;
+    width: 100%;
+    padding: 25px 0;
+    background-image: url(https://www.apple.com/v/home/ch/images/heroes/iphone-17-pro/hero_iphone_17_pro__bknyzxfk2agi_large.jpg);
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    
+}
+
+#center>h1{
+    color: white;
+    font-size: 45px;
+    padding-top: 15px;
+    font-family: seb;
+}
+#center>p{
+    color: white;
+    font-size: 25px;
+    font-weight: 200;
+    padding-bottom: 20px;
+    font-family: seb3;
+}
+#links{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+#links>button{
+    background-color: #0077ED;
+    color: white;
+    font-size: 15px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 50px;
+}
+
+#secondcenter{
+    height: 80%;
+    width: 100%;
+    padding: 25px 0;
+    background-image: url(https://www.apple.com/v/home/ch/images/heroes/iphone-air/hero_iphone_air__0gxyavihpiqu_large.jpg);
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+}
+
+#secondcenter>h1{
+    color: rgb(18, 17, 17);
+    font-size: 45px;
+    padding-top: 15px;
+}
+
+#secondcenter>p{
+    color: rgb(15, 15, 15);
+    font-size: 25px;
+    font-weight: 200;
+    padding: 20px 10px;
+}
+#links{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+#links>button{
+    background-color: #0077ED;
+    color: white;
+    font-size: 15px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 50px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns */
+    gap: 15px; /* Space between the cards */
+    height: 200%;
+    /* max-width: 100%; Adjust as needed */
+    padding: 20px;
+    width: 100%;
+    text-align: center;
+    color: black;
+}
+.card h2{
+    margin-top: 10px;
+    font-size: 30px;
+    font-family: seb;
+}
+.card p{
+    margin-top: 8px;
+    font-size: 25px;
+    font-weight: 200;
+    font-family: seb3;
+}
+.card-education {
+  position: relative;  /* content ko absolute bottom me rakhne ke liye */
+  height: 100%;       /* apne card ke hisaab se adjust kar */
+  background-color: #f2f2f2; /* optional */
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.card-education .card-content {
+  position: absolute;
+  bottom: 20px;   /* bottom se distance */
+  left: 20px;
+  right: 20px;
+  color:white;
+}
+
+
+.btn {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.blue-btn {
+  background-color: #0071e3;
+  color: white;
+  border: none;
+  padding: 10px 22px;
+  border-radius: 50px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.white-btn {
+  background-color: white;
+  color: #0071e3;
+  border: 2px solid #0071e3;
+  padding: 10px 22px;
+  border-radius: 50px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* Hover effect */
+.blue-btn:hover {
+  background-color: #005bb5;
+}
+
+.white-btn:hover {
+  background-color: #0071e3;
+  color: white;
+}
+
+
+
+.card-iphone{
+    background-image: url(https://www.apple.com/v/home/ch/images/promos/iphone-17/promo_iphone_17__bhofuohbsu3m_large.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.card-watchseries{
+    background-image: url(https://www.apple.com/in/home/images/promos/apple-watch-series-11/promo_apple_watch_series_11__b63hxviqvonm_large.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.card-education{
+    background-image: url(https://www.apple.com/v/home/ch/images/promos/education/promo_edu__efkxh2h1luoi_large.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.card-airpodpro{
+    background-image: url(https://www.apple.com/v/home/ch/images/promos/airpods-pro-3/promo_airpodspro_3__f6xmza7bglei_large.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.card-macbookair{
+    background-image: url(https://www.apple.com/v/home/ch/images/promos/macbook-air/promo_macbook_air__fqowrtnxewqe_large.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.card-iphone16{
+    background-image: url(https://www.apple.com/v/home/ch/images/promos/iphone-tradein/promo_iphone_tradein__bugw15ka691e_large.jpg);
+    background-size: cover;
+    background-position: center;
+}

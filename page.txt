@@ -18,3 +18,137 @@
     background-size: cover;
     background-position: center;
     text-align: center;
+
+     <div class="parent-container">
+        <div class="child-box box-1">
+            <h1>Nature</h1>
+        </div>
+        <div class="child-box box-2">
+            <h1>Cityscape</h1>
+        </div>
+        <div class="child-box box-3">
+            <h1>Mountains</h1>
+        </div>
+        <div class="child-box box-4">
+            <h1>Beach</h1>
+        </div>
+    </div>
+
+mera code hai
+     <div class="main">
+            <div id="new">
+                <h1>iPhone 17</h1>
+                <p>Magichromtic</p>
+                <div id="links">
+                     <button>Learn More</button>
+                    <button>Buy</button>
+                </div>
+            </div>
+            <div id="new1">
+                <h1>AirPods Pro 3</h1>
+                <p>The world's best in-ear <br> Active Noise Cancellation. <sup>1</sup></p>
+                <div id="links">
+                     <button>Learn More</button>
+                    <button>Buy</button>
+                </div>
+            </div>
+            <br>
+            
+            <div id="new2">
+                <h1>iPhone 17</h1>
+                <p>Magichromtic</p>
+                <div id="links">
+                     <button>Learn More</button>
+                    <button>Buy</button>
+                </div>
+            </div>
+            <div id="new3">
+                <h1>AirPods Pro 3</h1>
+                <p>The world's best in-ear <br> Active Noise Cancellation. <sup>1</sup></p>
+                <div id="links">
+                     <button>Learn More</button>
+                    <button>Buy</button>
+                </div>
+            </div>
+         </div>
+
+
+
+
+
+
+
+
+         .main{
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    display: grid;
+    grid-template: 1fr 1fr / 1fr 1fr;
+    padding: 20px ;
+    gap: 20px;
+    text-align: center;
+}
+.main #new {
+    height: 70%;
+    width: 50%;
+    background-image: url(https://www.apple.com/v/home/ch/images/promos/iphone-17/promo_iphone_17__bhofuohbsu3m_large.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 5%;
+}
+.main h1{
+    color:black;
+    font-size: 45px;
+    padding-top: 19px;
+    font-family: seb;
+    font-weight: 400;
+}
+.main p {
+    font-size: 25px;
+    font-weight: 200;
+    padding-bottom: 20px;
+    font-family: seb3;
+    font-weight: 400;
+}
+.main>button{
+    background-color: #0077ED;
+    color: white;
+    font-size: 40px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 50px;
+}
+
+.main #new1{
+    height: 70%;
+    width: 50%;
+    background-image: url(https://www.apple.com/v/home/ch/images/promos/airpods-pro-3/promo_airpodspro_3__f6xmza7bglei_large.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 5%;
+}
+.main>button{
+    background-color: #0077ED;
+    color: white;
+    font-size: 40px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 50px;
+}
+.main #new2 {
+    height: 70%;
+    width: 50%;
+    background-image: url(https://www.apple.com/v/home/ch/images/promos/iphone-17/promo_iphone_17__bhofuohbsu3m_large.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 5%;
+}
+.main #new3{
+    height: 70%;
+    width: 50%;
+    background-image: url(https://www.apple.com/v/home/ch/images/promos/airpods-pro-3/promo_airpodspro_3__f6xmza7bglei_large.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 5%;
+}
